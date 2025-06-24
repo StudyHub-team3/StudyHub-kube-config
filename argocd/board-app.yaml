@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: board-app
+  namespace: argocd
+spec:
+  project: default
+  sources:
+  - repoURL: https://github.com/StudyHub-team3/StudyHub-backend-board.git
+    targetRevision: HEAD
+    path: .kube
+  - repoURL: https://github.com/StudyHub-team3/StudyHub-kube-config.git
+    targetRevision: HEAD
+    path: services/board
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
