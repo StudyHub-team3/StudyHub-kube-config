@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: .kube
   - repoURL: https://github.com/StudyHub-team3/StudyHub-kube-config.git
-    targetRevision: HEAD
+    targetRevision: feat/study
     path: services/study
   destination:
     server: https://kubernetes.default.svc
