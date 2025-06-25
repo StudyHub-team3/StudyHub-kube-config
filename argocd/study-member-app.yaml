@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   sources:
-  - repoURL: https://github.com/StudyHub-team3/StudyHub-backend-study-member.git
-    targetRevision: HEAD
-    path: .kube
-  - repoURL: https://github.com/StudyHub-team3/StudyHub-kube-config.git
-    targetRevision: HEAD
-    path: services/study-member
+    - repoURL: https://github.com/StudyHub-team3/StudyHub-backend-study-member.git
+      targetRevision: HEAD
+      path: .kube
+    - repoURL: https://github.com/StudyHub-team3/StudyHub-kube-config.git
+      targetRevision: feat/study-member
+      path: services/study-member
   destination:
     server: https://kubernetes.default.svc
     namespace: default

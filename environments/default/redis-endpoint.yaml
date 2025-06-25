@@ -4,6 +4,6 @@ metadata:
   name: redis-external-service
 subsets:
   - addresses:
-      - ip: 192.168.35.207 #TODO 구동중인 컴퓨터 IP로 바꿔야함
+      - ip: 192.168.123.103 #TODO 구동중인 컴퓨터 IP로 바꿔야함
     ports:
       - port: 6379
