@@ -4,7 +4,7 @@ metadata:
   name: backend-notification-service
 spec:
   selector:
-    app: backend-notification-service
+    app: backend-notification
   ports:
     - port: 8080
       targetPort: 8080

@@ -4,7 +4,7 @@ metadata:
   name: backend-study-member-service
 spec:
   selector:
-    app: backend-study-member-service
+    app: backend-study-member
   ports:
     - port: 8080
       targetPort: 8080
