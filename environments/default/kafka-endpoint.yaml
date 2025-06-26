@@ -4,6 +4,6 @@ metadata:
   name: kafka-external-service
 subsets:
   - addresses:
-      - ip: 192.168.45.201 #TODO 구동중인 컴퓨터 IP로 바꿔야함
+      - ip: 192.168.0.10 #TODO 구동중인 컴퓨터 IP로 바꿔야함
     ports:
       - port: 9092
